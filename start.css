@@ -1,0 +1,59 @@
+/* style for start page  */
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+#layoutDiv{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+      
+    background-color: #2C3539;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#contentDiv{
+    width: 70%;
+    height: 70%;
+    background-color: #36454F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btns{
+    height: 100px;
+    width: 150px;
+    margin-bottom: 20px;
+    background-color: #2C3539;
+    border-radius: 20px;
+    color: white;
+}
+
+#imageStart{
+    height: 250px;
+    width: 250px;
+
+}
+
+
+.links{
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+}
