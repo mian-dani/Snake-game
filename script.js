@@ -5,7 +5,7 @@ const musicSound = new Audio("images/gameSound.mp3");
 
 /////////variables //// fields ///////arrays
 let inputDir = { x: 0, y: 0 };
-let speed = 5;
+var speed = 5;
 let lastPaintTime = 0;
 let score = 0;
 let snakeArr = [{ x: 15, y: 13 }];
@@ -149,3 +149,12 @@ window.addEventListener("keydown", (e) => {
       break;
   }
 });
+
+/////// Start file functions
+
+document.getElementById("lvl").addEventListener("change", () => {
+  var x = document.getElementById("lvl").value;
+  speed = x;
+});
+
+// function speedFun() {}

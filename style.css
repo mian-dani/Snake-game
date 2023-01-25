@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+
+/* colors 
+
+snake head = 02540c */
+
 .body{
     /* background-image: url("images/bg.jpg"); */
     min-height: 100vh;
@@ -40,6 +45,24 @@
     top: 70px;
     left: 30px;
     color: aliceblue;
+}
+
+.level{
+    position: absolute;
+    font-weight: bold;
+    font-size: 40px;
+    top: 150px;
+    left:30px ;
+    /* color: aliceblue; */
+}
+
+#apply{
+    position: absolute;
+    font-weight: bold;
+    font-size: 20px;
+    top: 220px;
+    left: 30px;
+    /* color: aliceblue; */
 }
 
 .head{
