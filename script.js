@@ -5,7 +5,7 @@ const musicSound = new Audio("images/gameSound.mp3");
 
 /////////variables //// fields ///////arrays
 let inputDir = { x: 0, y: 0 };
-let speed = 15;
+let speed = 5;
 let lastPaintTime = 0;
 let score = 0;
 let snakeArr = [{ x: 15, y: 13 }];
@@ -85,12 +85,18 @@ function gameEngine() {
   /////display snake
   board.innerHTML = "";
   snakeArr.forEach((e, index) => {
-    snakeElement = document.createElement("div");
+    snakeElement = document.createElement("IMG");
     snakeElement.style.gridRowStart = e.y;
     snakeElement.style.gridColumnStart = e.x;
     if (index === 0) {
+      snakeElement.setAttribute("src", "images/head3.png");
+      snakeElement.setAttribute("height", "25");
+      snakeElement.setAttribute("width", "25");
       snakeElement.classList.add("head");
     } else {
+      snakeElement.setAttribute("src", "images/body1.png");
+      snakeElement.setAttribute("height", "25");
+      snakeElement.setAttribute("width", "25");
       snakeElement.classList.add("snake");
     }
 
@@ -98,7 +104,8 @@ function gameEngine() {
   });
 
   ////// display food
-  foodElement = document.createElement("div");
+  foodElement = document.createElement("IMG");
+  foodElement.setAttribute("src", "images/apple.svg");
   foodElement.style.gridRowStart = food.y;
   foodElement.style.gridColumnStart = food.x;
   foodElement.classList.add("food");
